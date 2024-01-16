@@ -127,7 +127,7 @@ params:
     title: "Thibaud."
     subtitle: "I make games, backends and cloud infrastructures."
     content: "A passionate software engineer looking to create deep and engaging multiplayer experiences"
-    image: /images/thibaud2.jpg
+    image: /images/thibaud_5_7.jpg
     bottomImage:
       enable: true
     roundImage: false # Make hero image circular | default false
