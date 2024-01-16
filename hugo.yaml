@@ -1,4 +1,4 @@
-baseURL: https://thibaud.io/
+baseURL: https://portfolio.thibaud.io/
 languageCode: en-us
 title: Thibaud
 theme: hugo-profile
@@ -75,8 +75,8 @@ params:
   animate: true
 
   theme:
-    # disableThemeToggle: true
-    # defaultTheme: "light" # dark
+    disableThemeToggle: true
+    defaultTheme: "dark"
 
   font:
     fontSize: 1rem # default: 1rem
@@ -126,10 +126,10 @@ params:
     intro: "Hi, my name is"
     title: "Thibaud."
     subtitle: "I make games, backends and cloud infrastructures."
-    content: "A passionate software engineer looking to create deep and engaging multiplayer experiences"
-    image: /images/thibaud2.jpg
+    content: "A passionate software engineer with 13 years of experience looking to create deep and engaging multiplayer experiences."
+    image: /images/thibaud_5_7.jpg
     bottomImage:
-      enable: true
+      enable: false
     roundImage: false # Make hero image circular | default false
     button:
       enable: true
@@ -142,7 +142,7 @@ params:
         - icon: fa-solid fa-envelope
           url: '#contact'
         - icon: fab fa-linkedin
-          url: https://www.linkedin.com/in/thibaudbaas/
+          url: https://www.linkedin.com/in/thibaudio/
         - icon: fab fa-discord
           url: https://discordapp.com/users/136777939856523265
 
@@ -152,24 +152,19 @@ params:
     title: "About Me"
     image: "/images/thibaud.jpg"
     content: |-
-      My journey into multiplayer games started very young: the first games I remember playing was [Skitchin'](https://en.wikipedia.org/wiki/Skitchin%27) and [Bio-Hazard Battle](https://en.wikipedia.org/wiki/Bio-Hazard_Battle), on my grandma’s MegaDrive, in split-screen with my older cousin.
+      I'm a **software engineer** with more than **13 years of experience** making **games**, **backend services** and **cloud infrastructures**.
+      I have worked in different industries: FinTech, Robotics, Datascience and Games. 
+
+      My journey into multiplayer games started very young. My earliest gaming memories were with my older cousin, while playing [Skitchin'](https://en.wikipedia.org/wiki/Skitchin%27) and [Bio-Hazard Battle](https://en.wikipedia.org/wiki/Bio-Hazard_Battle) in split-screen on his Sega MegaDrive.
 
       Later, in High School, all of my friends where PC gamers: it was a real LAN parties paradise! We played the *hell* out of the Diablos, Counter-Strike, DoTA, … to cite only a few!
       At the same time, we also discovered MMORPG with The 4Th Coming and started building our first online community. People I have met there became some of my closest friends. 
 
-      That's why I love making multiplayer games:
+      That's why I love making multiplayer games:  
       **I want to create deep and engaging experiences, where communities can thrive and friends can be made.**
 
-      --- 
-
-      I'm a **software engineer** with more than **13 years of experience** making **games**, **backend services** and **cloud infrastructures**.
-      I have worked in different industries: FinTech, Robotics, Datascience and Games. This diversity helped me grow a lot on the technical side and on how to build and lead a team.
-
-      I am currently working on Rage to the Top, a rage-inducing online multiplayer platformer where you race your friends to the top of the level.
-
-      Here are some of the technologies I've been working with recently:
     skills:
-      enable: true
+      enable: false
       #title: "Here are a few technologies I've been working with recently:"
       items:
         - "Unreal Engine"
@@ -187,6 +182,22 @@ params:
     # title: "Custom Name"
     items:
       - job: "Senior Online Programmer"
+        company: "Stillwoods Games"
+        companyUrl: "https://stillwoods.games/"
+        date: "Oct 2023 - Now"
+        featuredLink:
+          enable: true
+          name: "BloodLoop"
+          url: "https://www.bloodloop.com/"
+        info:
+          enable: false
+        content: |
+          - Develop gameplay features in C++ and Blueprints
+          - Build and deploy backend services like matchmaking and data tracking
+          - Architect the different live environments and build the CI/CD pipeline
+          - Optimize existing networking calls to reduce in-game latency
+
+      - job: "Senior Online Programmer"
         company: "Ubisoft"
         companyUrl: "https://ubisoft.com"
         date: "Jul 2023 - Oct 2023"
@@ -201,7 +212,6 @@ params:
           - Developed the leaderboard and the matchmaking services
           - Build the autoscaler for match servers
           - Deployed the live infrastructure
-
 
       - job: "Engineering Manager"
         company: "Dataiku"
@@ -258,12 +268,12 @@ params:
 
       - job: "Find more on my LinkedIn profile"
         company: "more"
-        companyUrl: "https://www.linkedin.com/in/thibaudbaas/details/experience/"
+        companyUrl: "https://www.linkedin.com/in/thibaudio/details/experience/"
         date: "Jun 2009 - Feb 2016"
         featuredLink:
           enable: true
           name: "LinkedIn"
-          url: "https://www.linkedin.com/in/thibaudbaas/details/experience/"
+          url: "https://www.linkedin.com/in/thibaudio/details/experience/"
         info:
           enable: false
         content: ""
@@ -276,12 +286,43 @@ params:
   achievements:
     enable: false
 
+  # hero-skills
+  heroSkills:
+    enable: true
+    # title: "Custom Name"
+    items:
+      - title: Unreal Engine 5
+        image: /images/skills/ue.png
+      - title: Unity
+        image: /images/skills/unity.png
+      - title: Godot
+        image: /images/skills/godot.png
+      - title: Kubernetes
+        image: /images/skills/kubernetes.png
+      - title: AWS
+        image: /images/skills/amazon.png
+      - title: Azure
+        image: /images/skills/azure.png
   # projects
   projects:
     enable: true
     # title: "Custom Name"
     items:
-      - title: Champions Tactics
+      - title: BloodLoop
+        content: |
+          On BloodLoop, a multiplayer Hero Shooter, I'm working on all online services like authentication, matchmaking, datatracking; but also on live environments infrastructures and CI/CD pipeline.
+        image: /images/projects/bloodloop.png
+        featured:
+          name: Website
+          link: https://www.bloodloop.com/
+        badges:
+          - "Unreal Engine"
+          - "C++"
+          - "Multiplayer"
+          - "PlayFab"
+          - "Epic Online Services"
+
+      - title: Champions Tactics - Ubisoft
         content: |
           On this Online multiplayer PVP Tactical RPG, I built and deployed the live infrastructure on AWS, and developed some backend services like the match server autoscaler. I also developed a loadtesting client to test the infrastructure before launch.
         image: /images/projects/championstactics.png
@@ -295,7 +336,15 @@ params:
           - "Kubernetes"
           - "Terraform"
 
-      - title: Unannouced game
+      - title: Rage to the Top
+        content: I am the solo developer of Rage to the Top, a rage-inducing, online multiplayer, platformer racing game made with Unreal Engine 5. Available soon on Steam.
+        image: /images/projects/ragetothetop.png
+        badges:
+          - "Unreal Engine"
+          - "C++"
+          - "Multiplayer"
+
+      - title: Unannouced game - Ubisoft
         content: |
           I have built the leaderboard and the matchmaking services for an unannouced multiplayer PC game.
         image: /images/projects/silence.png
@@ -303,17 +352,6 @@ params:
           - "Unity"
           - "C#"
           - "Multiplayer"
-
-      - title: Rage to the Top
-        content: I am the solo developer of Rage to the Top, a rage-inducing, online multiplayer, platformer racing game made with Unreal Engine 5. Available soon on Steam.
-        image: /images/projects/silence.png
-        badges:
-          - "Unreal Engine"
-          - "C++"
-          - "Multiplayer"
-        # links:
-        #   - icon: fab fa-steam
-        #     url: https://github.com/gurusabarish/converter
 
       - title: Game Jams
         content: "You can find the games I made for game jams on my itch.io page."
