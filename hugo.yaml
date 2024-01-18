@@ -75,8 +75,8 @@ params:
   animate: true
 
   theme:
-    # disableThemeToggle: true
-    # defaultTheme: "light" # dark
+    disableThemeToggle: true
+    defaultTheme: "dark"
 
   font:
     fontSize: 1rem # default: 1rem
@@ -126,10 +126,10 @@ params:
     intro: "Hi, my name is"
     title: "Thibaud."
     subtitle: "I make games, backends and cloud infrastructures."
-    content: "A passionate software engineer looking to create deep and engaging multiplayer experiences"
+    content: "A passionate software engineer with 13 years of experience looking to create deep and engaging multiplayer experiences."
     image: /images/thibaud_5_7.jpg
     bottomImage:
-      enable: true
+      enable: false
     roundImage: false # Make hero image circular | default false
     button:
       enable: true
@@ -276,6 +276,23 @@ params:
   achievements:
     enable: false
 
+  # hero-skills
+  heroSkills:
+    enable: true
+    # title: "Custom Name"
+    items:
+      - title: Unreal Engine 5
+        image: /images/skills/ue.png
+      - title: Unity
+        image: /images/skills/unity.png
+      - title: Godot
+        image: /images/skills/godot.png
+      - title: Kubernetes
+        image: /images/skills/kubernetes.png
+      - title: AWS
+        image: /images/skills/amazon.png
+      - title: Azure
+        image: /images/skills/azure.png
   # projects
   projects:
     enable: true
