@@ -143,10 +143,6 @@ params:
           url: '#contact'
         - icon: fab fa-linkedin
           url: https://www.linkedin.com/in/thibaudio/
-        - icon: fab fa-discord
-          url: https://discordapp.com/users/136777939856523265
-        - icon: fab fa-mastodon
-          url: https://mastodon.gamedev.place/@rheneross
 
   # About
   about:
@@ -426,6 +422,3 @@ params:
     article: "Jan 2, 2006"
     articleList: "Jan 2, 2006"
     articleRecent: "Jan 2, 2006"
-
-  customScripts:
-    <div style="display:none"><a rel="me" href="https://mastodon.gamedev.place/@rheneross"></a></div>
