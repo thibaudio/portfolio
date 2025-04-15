@@ -12,7 +12,7 @@ outputs:
     - "HTML"
     - "RSS"
 
-Paginate: 3
+pagination.pagerSize: 3
 enableRobotsTXT: true
 # disqusShortname: your-disqus-shortname
 # googleAnalytics: G-MEASUREMENT_ID
@@ -126,7 +126,7 @@ params:
     intro: "Hi, my name is"
     title: "Thibaud."
     subtitle: "I make games, backends and cloud infrastructures."
-    content: "A passionate software engineer with 13 years of experience looking to create deep and engaging multiplayer experiences."
+    content: "A passionate software engineer with 14 years of experience looking to create deep and engaging multiplayer experiences."
     image: /images/thibaud_5_7.jpg
     bottomImage:
       enable: false
@@ -150,7 +150,7 @@ params:
     title: "About Me"
     image: "/images/thibaud.jpg"
     content: |-
-      I'm a **software engineer** with more than **13 years of experience** making **games**, **backend services** and **cloud infrastructures**.
+      I'm a **software engineer** with more than **14 years of experience** making **games**, **backend services** and **cloud infrastructures**.
       I have worked in different industries: FinTech, Robotics, Datascience and Games. 
 
       My journey into multiplayer games started very young. My earliest gaming memories were with my older cousin, while playing [Skitchin'](https://en.wikipedia.org/wiki/Skitchin%27) and [Bio-Hazard Battle](https://en.wikipedia.org/wiki/Bio-Hazard_Battle) in split-screen on his Sega MegaDrive.
